@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/corpus.jsonl
+data/index/
+.ipynb_checkpoints/

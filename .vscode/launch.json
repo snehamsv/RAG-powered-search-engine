@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FastAPI: uvicorn (debug)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["app:app", "--reload", "--port", "8000"],
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Ingest: arXiv corpus",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/ingest.py",
+      "args": ["--query", "retrieval augmented generation", "--max-results", "60"],
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
